@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    
 </head>
 <body>
     <!-- Head-->
@@ -17,7 +18,7 @@
      </header>
      <!-- User form-->
       <main>
-        <form action="">
+        <form action="./play.html" id="inputForm">
             <div class="itemform">
                 <label for="name">Introduce tu nick</label>
                 <input type="text" name="nick" value="@" id="nicka" readonly>
@@ -26,14 +27,14 @@
             <div class="itemform">
                 <label for="tamano">Tamaño del juego</label>
                 <select name="tamano" id="tamano">
-                    <option value="">--Elige un tamaño--</option>
+                    <option value="0">--Elige un tamaño--</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
                     <option value="3">6x6</option>
                 </select>
             </div>
             <div class="itemform">
-                <input type="submit" value="JUGAR">
+                <input type="submit" value="JUGAR" id="play">
             </div>
         </form>
       </main>
@@ -42,5 +43,6 @@
       <footer>
         <p>Curso FrontedEnd HTML, CSS y JS</p>
       </footer>
+      <script src="./js/app.js"></script>
 </body>
 </html>
